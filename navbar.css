@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #F1F2F4;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 0.7rem;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.searchBar{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /* border: 2px solid black; */
+    padding-left: 1rem;
+    margin: 0 3rem;
+    font-size: 1rem;
+    background-color: #F0F5FF;
+    border-radius: 0.5rem;
+}
+
+.searchBar i{
+    color: #717478;
+}
+
+.searchBar input{
+    padding-left: 2px;
+    height: 2.4rem;
+    border: none;
+    outline: none;
+    width: 95%;
+    font-size: 1rem;
+    background-color: #F0F5FF;
+    border: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.allInOne{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3.5rem;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.allInOne i,span:hover{
+    cursor: pointer;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.login:hover{
+    background-color: blueviolet;
+    color: white;
+    padding: 0.7rem 0.4rem;
+    border-radius: 0.3rem;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.becomeSeller{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.threeDot{
+    display: flex;
+    align-items: center;
+}
+
+.hoverEffect{
+    position: absolute;
+    top: 7.7%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    color: black;
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    display: none;
+}
+.newcustomer{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+}
+.newcustomer > p{
+    cursor: pointer;
+}
+.newcustomer > a{
+    text-decoration: none;
+}
+
+.moreInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0.6rem 0.6rem;
+}
+
+.login:hover .hoverEffect{
+    display: inline;
+}
+
+.moreInfo div{
+    display: flex;
+    gap: 0.7rem;
+}
+
+.threeDot .hoverEffect{
+    right: 1rem;
+    padding: 0.5rem;
+}
+
+.threeDot .hoverEffect div{
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+
+}
+
+.threeDot:hover .hoverEffect{
+    display: inline;
+    top: 7.5%;
+}
+.downloadApp a{
+    text-decoration: none;
+    color: black;
+}
+
+.threeDot > .fa-ellipsis-vertical:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 16px;
+}

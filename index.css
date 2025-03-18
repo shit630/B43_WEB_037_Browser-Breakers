@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    margin: 0.7rem 1.5rem;
+    background-color: #FFFFFF;
+    padding: 1rem 3rem;
+}
+.category > div{
+    text-align: center;
+    cursor: pointer;
+}
+.fashion:hover{
+    color: blue;
+}
+
+.fashinHover{
+    display: none;
+    gap: 4rem;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    top: 28.2%;
+    left: 18rem;
+    padding: 0.6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.7rem;
+}
+
+.menWear{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+    color: black;
+}
+.menWear > p:hover{
+    font-weight: bolder;
+}
+
+.womenWear{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+    color: black;
+}
+.womenWear > p:hover{
+    font-weight: bold;
+}
+
+.fashion:hover .fashinHover{
+    display: flex;
+}
+
+.fashion > p:hover{
+    cursor: default;
+    color: blue;
+}
+.fashion > img:hover{
+    cursor: default;
+}
+
+.electronics:hover{
+    color: blue;
+}
+
+.electronicsHover{
+    display: none;
+    gap: 4rem;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    top: 28.2%;
+    left: 26rem;
+    padding: 0.6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.7rem;
+}
+.electrics{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+    color: black;
+}
+.electrics > p:hover{
+    font-weight: bold;
+}
+.electronics:hover .electronicsHover{
+    display: flex;
+}
+.electronics > p:hover, .furniture > p:hover, .beautyToys > p:hover {
+    color: blue;
+    cursor:default;
+}
+
+.electronics > img:hover, .furniture > img:hover, .beautyToys > img:hover {
+    cursor:default;
+}
+
+.furniture:hover{
+    color: blue;
+}
+.furnitureHover{
+    display: none;
+    gap: 4rem;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    top: 28.2%;
+    left: 35rem;
+    padding: 0.6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.7rem;
+}
+
+.beautyToys:hover{
+    color: blue;
+}
+.beautyToysHover{
+    display: none;
+    gap: 4rem;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    top: 28.2%;
+    right: 15rem;
+    padding: 0.6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.7rem;
+    
+}
+.twoWheelers:hover{
+    color: blue;
+}
+
+.furni, .beauty, .wheelers{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+    color: black;
+}
+.furni > p:hover, .beauty > p:hover, .wheelers > p:hover{
+    font-weight: bold;
+}
+.furniture:hover .furnitureHover, .beautyToys:hover .beautyToysHover, .twoWheelers:hover .twoWheelersHover{
+    display: flex;
+}
+
+
+.twoWheelersHover{
+    display: none;
+    gap: 4rem;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    top: 28.2%;
+    right: 3rem;
+    padding: 0.6rem;
+    background-color: #FFFFFF;
+    border-radius: 0.7rem;
+    
+}
+
