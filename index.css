@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     margin-top: 1rem;
     justify-content: space-evenly;
-    margin: 0.7rem 1.5rem;
+    margin: 0.5rem 1.1rem;
     background-color: #FFFFFF;
     padding: 1rem 3rem;
 }
@@ -26,11 +26,11 @@
     gap: 4rem;
     position: absolute;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    top: 28.2%;
     left: 18rem;
     padding: 0.6rem;
     background-color: #FFFFFF;
     border-radius: 0.7rem;
+    z-index: 1;
 }
 
 .menWear{
@@ -59,6 +59,11 @@
     display: flex;
 }
 
+.fashinHover  p{
+    font-weight: lighter;
+    font-size: 13px;
+}
+
 .fashion > p:hover{
     cursor: default;
     color: blue;
@@ -76,11 +81,11 @@
     gap: 4rem;
     position: absolute;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    top: 28.2%;
     left: 26rem;
     padding: 0.6rem;
     background-color: #FFFFFF;
     border-radius: 0.7rem;
+    z-index: 1;
 }
 .electrics{
     display: flex;
@@ -104,6 +109,11 @@
     cursor:default;
 }
 
+.electrics > p{
+    font-weight: lighter;
+    font-size: 13px;
+}
+
 .furniture:hover{
     color: blue;
 }
@@ -112,11 +122,11 @@
     gap: 4rem;
     position: absolute;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    top: 28.2%;
     left: 35rem;
     padding: 0.6rem;
     background-color: #FFFFFF;
     border-radius: 0.7rem;
+    z-index: 1;
 }
 
 .beautyToys:hover{
@@ -127,11 +137,11 @@
     gap: 4rem;
     position: absolute;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    top: 28.2%;
     right: 15rem;
     padding: 0.6rem;
     background-color: #FFFFFF;
     border-radius: 0.7rem;
+    z-index: 1;
     
 }
 .twoWheelers:hover{
@@ -152,17 +162,311 @@
     display: flex;
 }
 
+.furni > p{
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.beauty > p{
+    font-weight: lighter;
+    font-size: 13px;
+}
 
 .twoWheelersHover{
     display: none;
-    gap: 4rem;
+    gap: 1rem;
     position: absolute;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    top: 28.2%;
     right: 3rem;
     padding: 0.6rem;
     background-color: #FFFFFF;
     border-radius: 0.7rem;
-    
+    z-index: 1;
+}
+
+.wheelers > p{
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.slider_Img > img{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.slider_Img{
+    display: flex;
+    cursor: pointer;
+}
+
+.slider_Btn{
+    margin: auto;
+    width: 10px;
+}
+
+.sliderBtn{
+    padding: 2rem 0.8rem;
+    font-size: 18px;
+    color: gray;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.leftBtn{
+    position: relative;
+    left: 1rem;
+    z-index: 1;
+}
+
+.rightBtn{
+    position: relative;
+    right: 2.5rem;
+}
+
+
+/* Best of electronics */
+.bestElectronic-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 380px;
+    /* background-color: red; */
+    width: 98%;
+    margin: auto;
+}
+.left-part{
+    /* background-color: yellow; */
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    height: 365px;
+    width: 79%;
+}
+
+.right-part{
+    /* background-color: green; */
+    height: 380px;
+    width: 19%;
+}
+.right-part > img{
+    width: 100%;
+    height: 100%;
+}
+.left-part > h2{
+    margin: 1rem  0.7rem ;
+}
+.productCard{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.childProductCard {
+    height: 250px;
+    width: 200px;
+    /* border: 2px solid black; */
+}
+.childProductCard > img{
+    width: 100px;
+    margin: auto;
+    height: 180px;
+    margin-left: 2.8rem;
+    margin-bottom: 15px;
+}
+.childProductCard > p{
+    margin-left: 14px;
+    text-align: center;
+    padding: 0.2rem;
+}
+.childProductCard:hover{
+    cursor: pointer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
+
+}
+
+.beautyToysFood-container{
+    width: 98%;
+    height: 340px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin: 0.7rem auto;
+}
+
+.beautyToysFood-container > h2{
+    padding: 1rem;;
+}
+
+.parentProductsCard{
+    display: flex;
+    margin: 1.5rem 1rem;
+    gap: 2.8rem;
+    /* overflow: hidden; */
+}
+.childProductsCard > p{
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.childProductsCard > img{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 1rem;
+}
+
+.childProductsCard:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
+    cursor: pointer;
+}
+
+.allAccessoris{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin: 1rem;
+}
+
+.parentCard{
+    height: 580px;
+    width: 100%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
+}
+.heading{
+    width: 97%;
+    padding: 10px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 15px;
+}
+.heading > button{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.heading > button:hover{
+    cursor: pointer;
+}
+
+.allProductsCards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 8px; */
+    height: 500px;
+    width: 96%;
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-top: 1rem;
+    place-items: center;
+}
+
+.allProductsCardsChild{
+    height: 240px;
+    width: 220px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin: auto;
+}
+
+.allProductsCardsChild > img{
+    width: 68%;
+    height: 160px;
+    margin-left: 2rem;
+    margin-bottom: 0.4rem;
+    margin-top: 0.4rem;
+}
+
+.allProductsCardsChild > img:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
+    cursor: pointer;
+}
+.allProductsCardsChild > p{
+    font-size: 14px;
+    font-weight: lighter;
+    margin-left: 2rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.allProductsCardsChild > span{
+    color: #108934;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+
+/* Groming Books */
+.gromingBook-container{
+    width: 98%;
+    height: 340px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin: 0.7rem auto;
+}
+
+.gromingBook-container > h2{
+    padding: 1rem;;
+}
+
+.parentGromingBookCard{
+    display: flex;
+    margin: 1.5rem 1rem;
+    gap: 2.8rem;
+}
+.childGromingBookCard > p{
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.childGromingBookCard > img{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 1rem;
+}
+
+.childGromingBookCard:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
+    cursor: pointer;
+}
+
+
+/* Furniture Deals */
+.furnitureDeals-container{
+    width: 98%;
+    height: 340px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin: 0.7rem auto;
+}
+
+.furnitureDeals-container > h2{
+    padding: 1rem;;
+}
+
+.parentfurnitureDealsCard{
+    display: flex;
+    margin: 1.5rem 1rem;
+    gap: 2.8rem;
+    /* overflow: hidden; */
+}
+.childfurnitureDealsCard > p{
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.childfurnitureDealsCard > img{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 1rem;
+}
+
+.childfurnitureDealsCard:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
+    cursor: pointer;
 }
 
