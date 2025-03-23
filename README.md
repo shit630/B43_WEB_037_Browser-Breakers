@@ -57,9 +57,6 @@ Follow these steps to set up and run the project locally:
 - 🎨 **CSS**
 - ⚡ **JavaScript** (Firebase for data handling)
 
-## 🎥 Video Walkthrough of the Project
-
-📹 [Watch Video]()
 
 ## 🎥 Video Walkthrough of the Codebase
 
