@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Payment</title>
+    <link rel="stylesheet" href="paymentPage.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>🛒 Flipkart Secure Payment</h2>
+
+        <div class="payment-methods">
+            <h3>Select Payment Method</h3>
+            <label><input type="radio" name="payment" value="upi" checked> UPI</label>
+            <label><input type="radio" name="payment" value="card"> Credit/Debit Card</label>
+            <label><input type="radio" name="payment" value="netbanking"> Net Banking</label>
+            <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+        </div>
+
+        <div id="payment-details"></div>
+
+        <button id="payNow">Proceed to Pay</button>
+    </div>
+
+    <script src="paymentPage.js"></script>
+
+</body>
+</html>

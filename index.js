@@ -113,3 +113,10 @@ function displayfurnitureDeals(data){
     });
 }
 
+let mobiles = document.getElementById("mobiles");
+mobiles.addEventListener("click", goToMobileProdPage);
+
+function goToMobileProdPage(){
+    window.location.href = "allMobiileProducts.html"
+}
+
