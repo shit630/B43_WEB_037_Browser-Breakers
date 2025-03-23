@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F1F2F4;
+}
+
+.parentCont{
+    display: flex;
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    height: 550px;
+    margin: auto;
+    background-color: white;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.leftSideCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    height: 100%;
+    background-color: #2874F0;
+}
+.topLeftCont{
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+.topLeftCont > h2{
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.topLeftCont > p{
+    color: #DBDBDB;
+    margin-top: 0.5rem;
+}
+.botomLeftCont{
+    margin-bottom: 3rem;
+    margin-left:2.8rem;
+}
+.rightSideCont{
+    width: 65%;
+    height: 100%;
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+.rightSideCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.emailPhnDiv{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.emailPhnDiv > input{
+    width: 90%;
+    border: none;
+    outline: none;
+    margin-top: 7px;
+}
+.emailPhnDiv > hr{
+    margin-right: 2rem;
+    /* color: #2874F0; */
+}
+.emailPhnDiv > label{
+    color: #878787;
+}
+
+.topRightCont  p{
+    margin-top: 1.3rem;
+    margin-left: 2rem;
+    color: #878787;
+    font-size: 14px;
+}
+
+.topRightCont a{
+    text-decoration: none;
+}
+.topRightCont > .requestOtp{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 1rem 37%;
+    background-color: #FB641B;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+

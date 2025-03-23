@@ -407,7 +407,22 @@
     color: blue;
 }
 
-
+.pagination{
+    width: 30%;
+    display: flex;
+    margin: 0  60% 0 50%;
+    /* height: 100px; */
+    /* border: 2px solid red; */
+}
+.pagination > li{
+    list-style: none;
+    margin: 10px;
+    padding: 6px 10px;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
 
 
 

@@ -1,5 +1,7 @@
 let allProd;
-let originalData;
+let originalData = [];
+let currPage = 1;
+let limt = 5;
 
 fetch(`https://flipkart-clone-a0d6e-default-rtdb.firebaseio.com/mobiles.json`)
 .then((res) => res.json())
@@ -7,15 +9,19 @@ fetch(`https://flipkart-clone-a0d6e-default-rtdb.firebaseio.com/mobiles.json`)
     allProd = Object.entries(data);
     originalData = Object.entries(data);
     dispalyProducts(allProd)
+    sePagination();
 })
 .catch((err) => console.log(err));
 
 function dispalyProducts(data){
+    let start = (currPage-1)*limt;
+    let end = start+limt;
+    let paginatedData = data.slice(start, end)
     console.log(data);
     // console.log(allProd);
     let productsListing = document.querySelector(".productsListing");
     productsListing.innerHTML =  "";
-    data.forEach((elm) => {
+    paginatedData.forEach((elm) => {
         let pId = elm[0];
         console.log(pId);
         // console.log(elm[1]);
@@ -112,4 +118,23 @@ function sortByPrice(){
 function showProductDeteils(pId){
     console.log(pId);
     window.location.href = `productsdetelis.html?pId=${pId}`
+}
+
+
+//pagination
+function sePagination(){
+    let pageCount = Math.ceil(originalData.length/limt);
+    let pagination = document.querySelector(".pagination");
+    pagination.innerHTML = ""
+    for(let i=1; i<=pageCount; i++){
+        let liPage = document.createElement("li");
+        liPage.innerHTML += i;
+        liPage.addEventListener("click", () => {
+            liPage.style.backgroundColor = "red";
+            currPage = i;
+            dispalyProducts(originalData);
+        });
+        pagination.append(liPage);
+        liPage.style.backgroundColor = "blue";
+    }
 }
