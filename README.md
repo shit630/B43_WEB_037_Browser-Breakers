@@ -1,4 +1,4 @@
-# 🌸 Nykaa Clone
+# 🌸 FLIPKART CLONE
 
 ## 📌 Introduction
 
